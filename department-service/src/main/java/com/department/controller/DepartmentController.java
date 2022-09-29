@@ -12,4 +12,8 @@ public class DepartmentController {
 	public String findDepartmentById(@PathVariable("id") Long departmentId) {
 		return "This is department service";
 	}
+	@GetMapping("/department")
+	public String getUserDeparment() {
+		return "This is department service using eureka";
+	}
 }
